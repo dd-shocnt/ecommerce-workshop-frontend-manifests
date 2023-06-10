@@ -8,6 +8,11 @@ spec:
   selector:
     matchLabels:
       tags.datadoghq.com/env: prod
+  strategy:
+    blueGreen:
+      activeService: frontend-active
+      previewService: frontend-standby
+      autoPromotionEnabled: false
   template:
     metadata:
       labels:

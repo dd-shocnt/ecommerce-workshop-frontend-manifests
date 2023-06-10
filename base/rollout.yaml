@@ -13,12 +13,6 @@ spec:
       tags.datadoghq.com/service: store-frontend
       tags.datadoghq.com/env: ENV
       app: ecommerce
-  strategy:
-    canary:
-      maxSurge: 1
-      maxUnavailable: 1
-      steps:
-      - setWeight: 100
   template:
     metadata:
       labels:

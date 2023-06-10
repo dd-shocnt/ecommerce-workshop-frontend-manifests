@@ -8,6 +8,12 @@ spec:
   selector:
     matchLabels:
       tags.datadoghq.com/env: staging
+  strategy:
+    canary:
+      maxSurge: 1
+      maxUnavailable: 1
+      steps:
+      - setWeight: 100
   template:
     metadata:
       labels:
