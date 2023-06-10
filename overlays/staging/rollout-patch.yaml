@@ -12,8 +12,8 @@ spec:
     metadata:
       labels:
         tags.datadoghq.com/env: staging
-        tags.datadoghq.com/version: "1.0"
+        tags.datadoghq.com/version: "blue"
     spec:
       containers:
-      - image: shocnt/store-frontend-instrumented-fixed:latest
+      - image: shocnt/store-frontend-instrumented-fixed:blue
         name: frontend
