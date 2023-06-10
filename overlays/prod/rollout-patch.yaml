@@ -17,10 +17,10 @@ spec:
     metadata:
       labels:
         tags.datadoghq.com/env: prod
-        tags.datadoghq.com/version: "blue"
+        tags.datadoghq.com/version: "green"
     spec:
       containers:
-      - image: shocnt/store-frontend-instrumented-fixed:blue
+      - image: shocnt/store-frontend-instrumented-fixed:green
         name: frontend
         env:
           - name: DD_CLIENT_TOKEN
