@@ -17,7 +17,7 @@ spec:
         - templateName: trace-error-rate-frontend
         args:
         - {name: version, value: "blue"}
-      autoPromotionSeconds: 300
+      autoPromotionSeconds: 60
       autoPromotionEnabled: true
   template:
     metadata:
