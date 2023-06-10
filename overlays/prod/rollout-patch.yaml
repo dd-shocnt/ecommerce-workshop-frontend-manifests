@@ -12,7 +12,13 @@ spec:
     blueGreen:
       activeService: frontend-active
       previewService: frontend-standby
-      autoPromotionEnabled: false
+      prePromotionAnalysis:
+        templates:
+        - templateName: trace-error-rate-frontend
+        args:
+        - {name: version, value: "green"}
+      autoPromotionSeconds: 300
+      autoPromotionEnabled: true
   template:
     metadata:
       labels:
