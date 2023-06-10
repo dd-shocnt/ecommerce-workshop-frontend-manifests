@@ -5,7 +5,7 @@ metadata:
     tags.datadoghq.com/service: store-frontend
     tags.datadoghq.com/env: ENV
     app: ecommerce
-  name: frontend
+  name: frontend-active
 spec:
   ports:
     - port: 8080

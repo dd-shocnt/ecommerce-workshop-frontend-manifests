@@ -3,7 +3,7 @@ kind: Service
 metadata:
   labels:
     tags.datadoghq.com/env: staging
-  name: frontend
+  name: frontend-active
 spec:
   selector:
     tags.datadoghq.com/env: staging

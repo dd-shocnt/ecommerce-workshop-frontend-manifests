@@ -3,7 +3,7 @@ kind: Service
 metadata:
   labels:
     tags.datadoghq.com/env: prod
-  name: frontend
+  name: frontend-active
 spec:
   selector:
     tags.datadoghq.com/env: prod

@@ -8,4 +8,5 @@ configurations:
   - rollout-transform.yaml
 patchesStrategicMerge:
 - rollout-patch.yaml
-- service-patch.yaml
+- service-patch-active.yaml
+- service-patch-standby.yaml
