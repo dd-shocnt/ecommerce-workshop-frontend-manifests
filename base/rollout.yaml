@@ -22,7 +22,7 @@ spec:
         app: ecommerce
       annotations:
         ad.datadoghq.com/frontend.logs: '[{"source": "ruby", "service": "store-frontend"}]'
-        ad.datadoghq.com/frontend.tags: '{"team": "frontend"}'
+        com.datadoghq.ad.tags: '["team:frontend", "application:ecommerce"]'
     spec:
       containers:
       - args:
