@@ -19,10 +19,10 @@ spec:
         tags.datadoghq.com/service: store-frontend
         tags.datadoghq.com/env: ENV
         tags.datadoghq.com/version: VERSION
-        com.datadoghq.ad.tags: '["team:frontend", "application:ecommerce"]'
         app: ecommerce
       annotations:
         ad.datadoghq.com/frontend.logs: '[{"source": "ruby", "service": "store-frontend"}]'
+        ad.datadoghq.com/tags: '{"team": "frontend","application": "ecommerce"}'
     spec:
       containers:
       - args:
